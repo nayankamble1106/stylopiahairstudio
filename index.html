@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylopia Hair Studio | Haute Coiffure Nagpur</title>
+  <meta name="description" content="Stylopia Hair Studio. 1st Floor, Jhansi Rani Square, Sitabuldi, Nagpur. 4.7 ★ (513+ Reviews). Bespoke Hair Architecture, Keratin, and Scalp Spa. Call 092265 39619.">
+  <meta name="theme-color" content="#0D0D0D">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Stylopia Hair Studio | Haute Coiffure Nagpur">
+  <meta property="og:description" content="Elegance Redefined. Bespoke Hair Architecture & Couture Styling in Sitabuldi, Nagpur.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       STRICT HIGH-FASHION COLOR & DESIGN PALETTE
+       - Background: Solid Obsidian Black (#0D0D0D)
+       - Card Surfaces: Dark Charcoal (#161618)
+       - Primary Text: Pure White (#FFFFFF)
+       - Accent Color: Subtle Crimson Red (#C8102E)
+       ========================================================================== */
+    :root {
+      --bg-obsidian: #0D0D0D;
+      --surface-charcoal: #161618;
+      --surface-charcoal-hover: #1c1c1f;
+      --text-white: #FFFFFF;
+      --text-muted: #8E8E93;
+      --text-dim: #636366;
+      --accent-crimson: #C8102E;
+      --accent-crimson-hover: #A00C24;
+      --accent-glow: rgba(200, 16, 46, 0.45);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(200, 16, 46, 0.65);
+      --gold-star: #FFB800;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-obsidian);
+      color: var(--text-white);
+      font-family: var(--font-sans);
+    }
+
+    body {
+      background-color: var(--bg-obsidian);
+      color: var(--text-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 70px; /* Space for mobile sticky action bar */
+    }
+
+    @media (min-width: 769px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    ::selection {
+      background-color: var(--accent-crimson);
+      color: var(--text-white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    button {
+      font-family: var(--font-sans);
+      cursor: pointer;
+      border: none;
+      background: none;
+      transition: all 0.25s ease;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       1. GLASSMORPHISM NAVBAR (FIXED HEADER BUG - SINGLE LOGO PLACEHOLDER)
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 74px;
+      z-index: 100;
+      background: rgba(13, 13, 13, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .navbar-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* SINGLE logo placeholder on the left (No text duplication) */
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .navbar-brand img {
+      height: 38px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Minimal Crimson Pill button on the right */
+    .btn-pill-book {
+      background: var(--accent-crimson);
+      color: var(--text-white);
+      padding: 10px 22px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 18px rgba(200, 16, 46, 0.35);
+      transition: all 0.3s ease;
+    }
+
+    .btn-pill-book:hover {
+      background: var(--accent-crimson-hover);
+      box-shadow: 0 6px 24px rgba(200, 16, 46, 0.55);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       2. ULTRA-MINIMAL HERO SECTION (85vh Dark Obsidian Focus)
+       ========================================================================== */
+    .hero-section {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      padding: 130px 24px 70px 24px;
+      background: radial-gradient(circle at 50% 45%, #18181b 0%, #0D0D0D 80%);
+    }
+
+    .hero-content {
+      max-width: 840px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .hero-crimson-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(3rem, 7.5vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+      margin-bottom: 20px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: #EFEFEF;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      font-weight: 300;
+      letter-spacing: 0.16em;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      margin-bottom: 44px;
+      max-width: 580px;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--accent-crimson);
+      color: var(--text-white);
+      padding: 16px 40px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      box-shadow: 0 10px 30px rgba(200, 16, 46, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .hero-cta:hover {
+      background: var(--accent-crimson-hover);
+      box-shadow: 0 14px 40px rgba(200, 16, 46, 0.65);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       3. MINI TRUST BAR (Gold Stars & Social Proof)
+       ========================================================================== */
+    .trust-bar {
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      background: #111113;
+      padding: 18px 24px;
+    }
+
+    .trust-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      text-align: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #D4D4D8;
+    }
+
+    .trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .trust-star {
+      color: var(--gold-star);
+      font-size: 0.95rem;
+      text-shadow: 0 0 10px rgba(255, 184, 0, 0.5);
+    }
+
+    .trust-bullet {
+      color: var(--accent-crimson);
+      font-size: 0.6rem;
+    }
+
+    /* ==========================================================================
+       4. UPGRADED SIGNATURE SERVICES GRID (COMPACT EDITORIAL)
+       ========================================================================== */
+    .services-section {
+      padding: 100px 0;
+      background-color: var(--bg-obsidian);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: var(--text-white);
+      letter-spacing: -0.01em;
+    }
+
+    /* Filter Tabs */
+    .filter-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+      margin-bottom: 46px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab {
+      padding: 8px 22px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: var(--surface-charcoal);
+      transition: all 0.25s ease;
+    }
+
+    .filter-tab:hover {
+      color: var(--text-white);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .filter-tab.active {
+      color: var(--text-white);
+      background: var(--accent-crimson);
+      border-color: var(--accent-crimson);
+      box-shadow: 0 4px 16px rgba(200, 16, 46, 0.35);
+    }
+
+    /* Compact 3-Column Desktop Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Compact Service Card */
+    .service-card {
+      background: var(--surface-charcoal);
+      border: 1px solid var(--border-subtle);
+      border-radius: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Micro Hover Animation: Thin Crimson Red border glow & subtle scale */
+    .service-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 0 24px var(--accent-glow);
+      transform: translateY(-4px);
+    }
+
+    .card-media {
+      position: relative;
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      background-color: #111111;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.9) contrast(1.1);
+      transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.7s ease;
+    }
+
+    .service-card:hover .card-img {
+      transform: scale(1.06);
+      filter: brightness(1) contrast(1.15);
+    }
+
+    .card-hover-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(13, 13, 13, 0.85);
+      border: 1px solid var(--accent-crimson);
+      color: var(--text-white);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover .card-hover-hint {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card-info {
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--surface-charcoal);
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-white);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-price {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--accent-crimson);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       CLICK-TO-VIEW SLIDE-OVER DRAWER / MODAL
+       ========================================================================== */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    .drawer-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .drawer-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      max-width: 480px;
+      height: 100%;
+      background: #141416;
+      border-left: 1px solid var(--border-subtle);
+      z-index: 201;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -15px 0 50px rgba(0, 0, 0, 0.9);
+      overflow-y: auto;
+    }
+
+    .drawer-container.active {
+      transform: translateX(0);
+    }
+
+    .drawer-header {
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drawer-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      font-weight: 700;
+    }
+
+    .drawer-close-btn {
+      color: var(--text-muted);
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    .drawer-close-btn:hover {
+      color: var(--text-white);
+    }
+
+    .drawer-body {
+      padding: 32px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .drawer-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--text-white);
+      line-height: 1.2;
+    }
+
+    .drawer-meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      background: #19191d;
+      padding: 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .drawer-meta-item label {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .drawer-meta-item span {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    .drawer-meta-item .price-highlight {
+      color: var(--accent-crimson);
+    }
+
+    .drawer-section-heading {
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-white);
+      font-weight: 600;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+
+    .drawer-benefits-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .drawer-benefits-list li {
+      font-size: 0.85rem;
+      color: #A1A1AA;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .drawer-benefits-list li::before {
+      content: '✦';
+      color: var(--accent-crimson);
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .drawer-cta-wrapper {
+      padding: 24px 28px;
+      border-top: 1px solid var(--border-subtle);
+      background: #141416;
+    }
+
+    .drawer-whatsapp-btn {
+      width: 100%;
+      background: var(--accent-crimson);
+      color: var(--text-white);
+      padding: 15px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 6px 20px rgba(200, 16, 46, 0.4);
+      border-radius: 4px;
+    }
+
+    .drawer-whatsapp-btn:hover {
+      background: var(--accent-crimson-hover);
+      box-shadow: 0 8px 25px rgba(200, 16, 46, 0.65);
+    }
+
+    /* ==========================================================================
+       5. CLIENT REVIEWS & TESTIMONIALS (3 Glassmorphism Cards)
+       ========================================================================== */
+    .reviews-section {
+      padding: 100px 0;
+      background-color: #0b0b0d;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    @media (max-width: 900px) {
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .review-card {
+      background: rgba(22, 22, 24, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      border-color: rgba(200, 16, 46, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .review-stars {
+      color: var(--gold-star);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 4px;
+    }
+
+    .review-quote {
+      font-size: 0.88rem;
+      color: #D4D4D8;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 14px;
+    }
+
+    .author-name {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--text-white);
+    }
+
+    .author-source {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #10B981;
+    }
+
+    /* ==========================================================================
+       6. STUDIO AMBIENCE GALLERY ("The Experience")
+       ========================================================================== */
+    .ambience-section {
+      padding: 100px 0;
+      background-color: var(--bg-obsidian);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .ambience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 800px) {
+      .ambience-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ambience-card {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+      background-color: #1a1a1a;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .ambience-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(1.15) brightness(0.85);
+      transition: filter 0.6s ease, transform 0.6s ease;
+    }
+
+    .ambience-card:hover .ambience-img {
+      filter: grayscale(0%) contrast(1.1) brightness(0.95);
+      transform: scale(1.04);
+    }
+
+    .ambience-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13, 13, 13, 0.9) 0%, transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+    }
+
+    .ambience-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .ambience-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--text-white);
+    }
+
+    /* ==========================================================================
+       7. LOCATION & LIVE DARK GOOGLE MAPS EMBED
+       ========================================================================== */
+    .location-section {
+      padding: 100px 0;
+      background-color: #0b0b0d;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      background: var(--surface-charcoal);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+    }
+
+    @media (max-width: 900px) {
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .location-info-panel {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .location-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 400;
+      color: var(--text-white);
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+
+    .location-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+      font-size: 0.85rem;
+      color: #A1A1AA;
+    }
+
+    .location-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .location-meta-item strong {
+      color: var(--text-white);
+    }
+
+    .location-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-call-direct {
+      background: var(--accent-crimson);
+      color: var(--text-white);
+      padding: 13px 28px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      box-shadow: 0 4px 18px rgba(200, 16, 46, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-call-direct:hover {
+      background: var(--accent-crimson-hover);
+      box-shadow: 0 6px 24px rgba(200, 16, 46, 0.55);
+      transform: translateY(-2px);
+    }
+
+    .btn-maps-direct {
+      background: transparent;
+      color: var(--text-white);
+      padding: 13px 26px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border: 1px solid var(--border-subtle);
+      border-radius: 2px;
+    }
+
+    .btn-maps-direct:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      color: var(--text-white);
+      transform: translateY(-2px);
+    }
+
+    .map-embed-wrapper {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      background: #0D0D0D;
+    }
+
+    /* Dark-styled customized Google Maps */
+    .map-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 0;
+      filter: invert(90%) hue-rotate(180deg) contrast(90%);
+      display: block;
+    }
+
+    /* ==========================================================================
+       8. FAQ ACCORDION SECTION
+       ========================================================================== */
+    .faq-section {
+      padding: 100px 0;
+      background-color: var(--bg-obsidian);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .faq-accordion {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--surface-charcoal);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+
+    .faq-item.active {
+      border-color: rgba(200, 16, 46, 0.5);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 22px 26px;
+      text-align: left;
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .faq-question:hover {
+      color: var(--accent-crimson);
+    }
+
+    .faq-icon {
+      font-size: 1.2rem;
+      color: var(--accent-crimson);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 26px;
+      font-size: 0.88rem;
+      color: #A1A1AA;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding-bottom: 24px;
+    }
+
+    /* ==========================================================================
+       9. INSTANT VIP BOOKING CTA BANNER
+       ========================================================================== */
+    .cta-banner-section {
+      padding: 90px 24px;
+      background: radial-gradient(circle at 50% 50%, #1e1315 0%, #0D0D0D 80%);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      text-align: center;
+    }
+
+    .cta-banner-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-banner-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 400;
+      color: var(--text-white);
+      margin-bottom: 14px;
+    }
+
+    .cta-banner-desc {
+      font-size: 0.9rem;
+      color: #A1A1AA;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 34px;
+    }
+
+    .btn-banner-glowing {
+      display: inline-block;
+      background: var(--accent-crimson);
+      color: var(--text-white);
+      padding: 16px 44px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      box-shadow: 0 0 35px rgba(200, 16, 46, 0.65);
+      transition: all 0.3s ease;
+    }
+
+    .btn-banner-glowing:hover {
+      background: var(--accent-crimson-hover);
+      box-shadow: 0 0 50px rgba(200, 16, 46, 0.9);
+      transform: scale(1.03);
+    }
+
+    /* ==========================================================================
+       10. MINIMAL FOOTER & STICKY MOBILE ACTION BAR
+       ========================================================================== */
+    .site-footer {
+      padding: 48px 0;
+      background: #080808;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .site-footer a:hover {
+      color: var(--accent-crimson);
+    }
+
+    /* Fixed Bottom Action Bar for Mobile Viewports */
+    .sticky-mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      z-index: 95;
+      background: rgba(13, 13, 13, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    @media (max-width: 768px) {
+      .sticky-mobile-bar {
+        display: flex;
+        align-items: stretch;
+      }
+    }
+
+    .mobile-bar-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-white);
+      gap: 6px;
+    }
+
+    .mobile-bar-btn.call-btn {
+      background: #18181b;
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .mobile-bar-btn.wa-btn {
+      background: var(--accent-crimson);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. GLASSMORPHISM NAVBAR (FIXED HEADER: SINGLE LOGO ON LEFT, PILL ON RIGHT)
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <!-- Left: SINGLE logo placeholder without text duplication -->
+      <a href="#" class="navbar-brand">
+        <img
+          src="logo-placeholder.png"
+          alt="Stylopia Hair Studio Logo"
+          style="height: 38px;"
+          onerror="this.onerror=null; this.src='/public/logo-placeholder.svg';"
+        >
+      </a>
+
+      <!-- Right: Minimal Crimson Pill Button -->
+      <a
+        href="https://wa.me/919226539619?text=Hello%20Stylopia%20Hair%20Studio,%20I%20would%20like%20to%20book%20a%20VIP%20appointment."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-pill-book"
+      >
+        Book VIP
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. ULTRA-MINIMAL HERO SECTION (85vh Dark Obsidian Focus)
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="hero-crimson-tag">NAGPUR • SITABULDI</span>
+      <h1 class="hero-title">
+        Elegance <em>Redefined.</em>
+      </h1>
+      <p class="hero-subtitle">
+        Bespoke Hair Architecture &amp; Couture Styling
+      </p>
+      <button class="hero-cta" onclick="openServiceDrawer('Keratin & Smooth')">
+        Reserve Experience
+      </button>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. MINI TRUST BAR
+       ========================================================================== -->
+  <div class="trust-bar">
+    <div class="container trust-bar-inner">
+      <div class="trust-item">
+        <span class="trust-star">★</span>
+        <strong>4.7 ★ Rating</strong>
+      </div>
+      <span class="trust-bullet">•</span>
+      <div class="trust-item">
+        <span>513+ Verified Reviews in Nagpur</span>
+      </div>
+      <span class="trust-bullet">•</span>
+      <div class="trust-item">
+        <span>Sitabuldi&apos;s #1 Luxury Studio</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       4. UPGRADED INTERACTIVE SIGNATURE SERVICES GRID
+       ========================================================================== -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Menu</span>
+        <h2 class="section-title">Signature Services</h2>
+
+        <!-- Category Filter Tabs: [ ALL ], [ HAIR ], [ KERATIN ], [ SPA ] -->
+        <div class="filter-tabs">
+          <button class="filter-tab active" onclick="filterServices('all', this)">[ ALL ]</button>
+          <button class="filter-tab" onclick="filterServices('hair', this)">[ HAIR ]</button>
+          <button class="filter-tab" onclick="filterServices('keratin', this)">[ KERATIN ]</button>
+          <button class="filter-tab" onclick="filterServices('spa', this)">[ SPA ]</button>
+        </div>
+      </div>
+
+      <!-- Compact 3-Column Desktop Grid -->
+      <div class="services-grid" id="servicesGrid">
+
+        <!-- Card 1: Keratin -->
+        <div class="service-card" data-category="keratin" onclick="openServiceDrawer('Keratin & Smooth')">
+          <div class="card-media">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+              alt="Keratin & Smooth"
+              class="card-img"
+              loading="lazy"
+            >
+            <span class="card-hover-hint">Click for Details →</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Keratin &amp; Smooth</h3>
+            <span class="card-price">From ₹3,999</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Hair -->
+        <div class="service-card" data-category="hair" onclick="openServiceDrawer('French Balayage')">
+          <div class="card-media">
+            <img
+              src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80"
+              alt="French Balayage"
+              class="card-img"
+              loading="lazy"
+            >
+            <span class="card-hover-hint">Click for Details →</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">French Balayage</h3>
+            <span class="card-price">From ₹4,499</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Hair -->
+        <div class="service-card" data-category="hair" onclick="openServiceDrawer('Haute Couture Cut')">
+          <div class="card-media">
+            <img
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+              alt="Haute Couture Cut"
+              class="card-img"
+              loading="lazy"
+            >
+            <span class="card-hover-hint">Click for Details →</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Haute Couture Cut</h3>
+            <span class="card-price">From ₹799</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Spa -->
+        <div class="service-card" data-category="spa" onclick="openServiceDrawer('Cellular Scalp Spa')">
+          <div class="card-media">
+            <img
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+              alt="Cellular Scalp Spa"
+              class="card-img"
+              loading="lazy"
+            >
+            <span class="card-hover-hint">Click for Details →</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Cellular Scalp Spa</h3>
+            <span class="card-price">From ₹1,499</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Keratin -->
+        <div class="service-card" data-category="keratin" onclick="openServiceDrawer('Molecular Hair Botox')">
+          <div class="card-media">
+            <img
+              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80"
+              alt="Molecular Hair Botox"
+              class="card-img"
+              loading="lazy"
+            >
+            <span class="card-hover-hint">Click for Details →</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Molecular Hair Botox</h3>
+            <span class="card-price">From ₹3,499</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Hair -->
+        <div class="service-card" data-category="hair" onclick="openServiceDrawer('Occasion & Styling')">
+          <div class="card-media">
+            <img
+              src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80"
+              alt="Occasion & Styling"
+              class="card-img"
+              loading="lazy"
+            >
+            <span class="card-hover-hint">Click for Details →</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Occasion &amp; Styling</h3>
+            <span class="card-price">From ₹1,899</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CLICK-TO-VIEW SLIDE-OVER DRAWER (MODAL)
+       ========================================================================== -->
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeServiceDrawer()"></div>
+  <aside class="drawer-container" id="serviceDrawer">
+    <div class="drawer-header">
+      <span class="drawer-tag">Service Dossier</span>
+      <button class="drawer-close-btn" onclick="closeServiceDrawer()" aria-label="Close details">×</button>
+    </div>
+
+    <div class="drawer-body">
+      <h3 class="drawer-title" id="drawerTitle">Keratin &amp; Smooth</h3>
+
+      <div class="drawer-meta-grid">
+        <div class="drawer-meta-item">
+          <label>Estimated Duration</label>
+          <span id="drawerDuration">2.5 - 3.5 Hours</span>
+        </div>
+        <div class="drawer-meta-item">
+          <label>Starting Investment</label>
+          <span class="price-highlight" id="drawerPrice">From ₹3,999</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="drawer-section-heading">Formulations &amp; Science</h4>
+        <p style="font-size: 0.85rem; color: #A1A1AA; line-height: 1.6;" id="drawerFormulation">
+          Formaldehyde-safe amino protein infusion with botanical silk extract and thermal cuticle bonding.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="drawer-section-heading">Key Clinical Benefits</h4>
+        <ul class="drawer-benefits-list" id="drawerBenefits">
+          <li>Eliminates 95% of frizz and humidity puffiness for up to 5 months.</li>
+          <li>Leaves tresses with a mirror-reflective high-gloss sheen.</li>
+          <li>Restores core structural protein depleted by heat and coloring.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="drawer-cta-wrapper">
+      <a
+        href="#"
+        id="drawerBookBtn"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="drawer-whatsapp-btn"
+      >
+        Book This Service via WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       5. CLIENT REVIEWS & TESTIMONIALS (3 Glassmorphism Cards)
+       ========================================================================== -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Acclaim</span>
+        <h2 class="section-title">Verified Nagpur Voices</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              &ldquo;Got my keratin treatment and balayage at Stylopia Sitabuldi. My hair feels like liquid silk. The staff is ultra-professional and the ambience is truly luxury European level.&rdquo;
+            </p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Priya Deshmukh</span>
+            <span class="author-source">Verified Google Review</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              &ldquo;Travelled from Dharampeth to Sitabuldi just for their Director Cut. The precision and attention to hair density and face contour is unmatched in Nagpur.&rdquo;
+            </p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Rohan Agrawal</span>
+            <span class="author-source">Verified Google Review</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              &ldquo;The Kérastase scalp spa with ozone nano-steam is pure therapy. Quiet, fragrant, and pristine studio overlooking Jhansi Rani Square. 10/10 recommended!&rdquo;
+            </p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Ananya Sharma</span>
+            <span class="author-source">Verified Google Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. STUDIO AMBIENCE GALLERY ("The Experience")
+       ========================================================================== -->
+  <section class="ambience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Atmosphere</span>
+        <h2 class="section-title">The Experience</h2>
+      </div>
+
+      <div class="ambience-grid">
+        <div class="ambience-card">
+          <img
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+            alt="VIP Styling Station"
+            class="ambience-img"
+            loading="lazy"
+          >
+          <div class="ambience-overlay">
+            <span class="ambience-tag">Suite I</span>
+            <h3 class="ambience-title">VIP Styling Desk</h3>
+          </div>
+        </div>
+
+        <div class="ambience-card">
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+            alt="Hair Spa Suite"
+            class="ambience-img"
+            loading="lazy"
+          >
+          <div class="ambience-overlay">
+            <span class="ambience-tag">Suite II</span>
+            <h3 class="ambience-title">Ozone Spa Sanctuary</h3>
+          </div>
+        </div>
+
+        <div class="ambience-card">
+          <img
+            src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80"
+            alt="Wash Basin Lounge"
+            class="ambience-img"
+            loading="lazy"
+          >
+          <div class="ambience-overlay">
+            <span class="ambience-tag">Suite III</span>
+            <h3 class="ambience-title">Wash Lounge</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. LOCATION & LIVE DARK GOOGLE MAPS EMBED
+       ========================================================================== -->
+  <section id="location" class="location-section">
+    <div class="container">
+      <div class="location-grid">
+        <!-- Left Side: Studio info -->
+        <div class="location-info-panel">
+          <span class="location-tag">Sitabuldi Studio</span>
+          <h2 class="location-heading">
+            1st Floor, Jhansi Rani Square, Sitabuldi, Nagpur
+          </h2>
+
+          <div class="location-meta-list">
+            <div class="location-meta-item">
+              <span>📍 Opposite Jhansi Rani Square Metro Station Entry</span>
+            </div>
+            <div class="location-meta-item">
+              <span>🕒 <strong>10:00 AM – 9:00 PM</strong> (Open 7 Days a Week)</span>
+            </div>
+            <div class="location-meta-item">
+              <span>📞 <strong>092265 39619</strong> (Direct Concierge)</span>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="tel:09226539619" class="btn-call-direct">
+              Direct Call
+            </a>
+            <a
+              href="https://maps.google.com/?q=Stylopia+Hair+Studio+Jhansi+Rani+Square+Sitabuldi+Nagpur"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-maps-direct"
+            >
+              Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Dark-customized Google Maps iframe -->
+        <div class="map-embed-wrapper">
+          <iframe
+            title="Stylopia Hair Studio Location Map"
+            src="https://maps.google.com/maps?q=Jhansi+Rani+Square+Sitabuldi+Nagpur&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. FAQ ACCORDION SECTION
+       ========================================================================== -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Assistance</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do I need an advance appointment or do you accept walk-ins?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            While walk-ins are accommodated based on stylist availability, we strongly advise reserving your slot in advance—particularly for lengthy couture rituals like Nanoplastia, Keratin, and Balayage.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Where can I park near Jhansi Rani Square, Sitabuldi?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Convenient vehicular parking is available at the adjacent Sitabuldi Metro Complex and along the Jhansi Rani Square transit hub, less than 50 meters from our 1st-floor entrance.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What hair formulations and product brands do you use?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            We formulate exclusively with salon-certified European luxury lines including Kérastase Paris, Olaplex molecular bond multipliers, and L’Oréal Professionnel Serie Expert.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How long does a Keratin or Nanoplastia treatment last?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            With our prescribed sulfate-free aftercare regimen, results typically endure 4 to 5 months with radiant shine, total humidity resistance, and zero frizz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. INSTANT VIP BOOKING CTA BANNER
+       ========================================================================== -->
+  <section class="cta-banner-section">
+    <div class="container cta-banner-content">
+      <h2 class="cta-banner-title">Ready for your hair transformation?</h2>
+      <p class="cta-banner-desc">Experience bespoke couture styling at Jhansi Rani Square, Sitabuldi.</p>
+      <a
+        href="https://wa.me/919226539619?text=Hello%20Stylopia%20Hair%20Studio,%20I%20am%20ready%20for%20my%20hair%20transformation.%20Please%20book%20my%20VIP%20appointment."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-banner-glowing"
+      >
+        Book VIP Experience
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FOOTER & STICKY MOBILE ACTION BAR
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© STYLOPIA HAIR STUDIO · 1ST FLOOR, JHANSI RANI SQUARE, SITABULDI, NAGPUR</p>
+      <p style="margin-top: 8px;">CONCIERGE: <a href="tel:09226539619">092265 39619</a> · 4.7 ★ (513+ VERIFIED GOOGLE REVIEWS)</p>
+    </div>
+  </footer>
+
+  <!-- Fixed Bottom Action Bar for Mobile Viewports -->
+  <div class="sticky-mobile-bar">
+    <a href="tel:09226539619" class="mobile-bar-btn call-btn">
+      📞 Call
+    </a>
+    <a
+      href="https://wa.me/919226539619?text=Hello%20Stylopia%20Hair%20Studio,%20I%20would%20like%20to%20book%20an%20appointment."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mobile-bar-btn wa-btn"
+    >
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       VANILLA JS (Filtering, Interactive Slide-Over Drawer, FAQ Accordion)
+       ========================================================================== -->
+  <script>
+    // 1. Service Details Database for the Slide-Over Drawer
+    const SERVICE_DETAILS = {
+      'Keratin & Smooth': {
+        title: 'Keratin & Smooth',
+        duration: '2.5 - 3.5 Hours',
+        price: 'From ₹3,999',
+        formulation: 'Formaldehyde-free amino acid fusion with hydrolyzed silk protein and heat-sealed cuticle protection.',
+        benefits: [
+          'Eliminates up to 95% of frizz and humidity puffiness for 4-5 months.',
+          'Infuses natural reflective gloss and silky liquid movement.',
+          'Strengthens heat-damaged tresses without stripping natural body.'
+        ]
+      },
+      'French Balayage': {
+        title: 'French Balayage',
+        duration: '3.0 - 4.5 Hours',
+        price: 'From ₹4,499',
+        formulation: 'Freehand bespoke lightening paired with Olaplex bond multiplier and ammonia-free French gloss toners.',
+        benefits: [
+          'Natural dimensional sun-kissed gradient with seamless root grow-out.',
+          'Zero harsh line demarcation with personalized tone balancing.',
+          'Hair fiber is safeguarded throughout the lightening process.'
+        ]
+      },
+      'Haute Couture Cut': {
+        title: 'Haute Couture Cut',
+        duration: '45 - 60 Minutes',
+        price: 'From ₹799',
+        formulation: 'Bespoke precision scissor architecture, dry-cut texturizing, and signature blowout finish.',
+        benefits: [
+          'Architected specifically to flatter your bone structure and facial contours.',
+          'Effortless daily styling that retains shape for 8+ weeks.',
+          'Includes scalp cleanse and relaxing acupressure wash.'
+        ]
+      },
+      'Cellular Scalp Spa': {
+        title: 'Cellular Scalp Spa',
+        duration: '60 - 75 Minutes',
+        price: 'From ₹1,499',
+        formulation: 'Kérastase Paris botanical concentrate with micro-ozone steam therapy and thermal clay exfoliation.',
+        benefits: [
+          'Deep detox of sebum, pollutants, and hard water residue.',
+          'Stimulates micro-circulation for denser, healthier follicle growth.',
+          'Calms tension with extended neck and shoulder acupressure.'
+        ]
+      },
+      'Molecular Hair Botox': {
+        title: 'Molecular Hair Botox',
+        duration: '2.0 - 2.5 Hours',
+        price: 'From ₹3,499',
+        formulation: 'Hyaluronic acid, biomimetic collagen, and caviar extract capillary renewal infusion.',
+        benefits: [
+          'Fills deep structural fractures and hollow gaps in damaged hair shafts.',
+          'Restores natural bounce and elasticity without flattening natural volume.',
+          'Provides instant anti-aging renewal for brittle, over-processed ends.'
+        ]
+      },
+      'Occasion & Styling': {
+        title: 'Occasion & Styling',
+        duration: '60 - 90 Minutes',
+        price: 'From ₹1,899',
+        formulation: 'High-definition runway thermal sculpting, humidity-resistant setting sprays, and shine glossing.',
+        benefits: [
+          'Long-lasting hold crafted specifically for portraits and galas.',
+          'Volume and movement designed to withstand outdoor weather.',
+          'Includes luxury setting mist for camera-ready perfection.'
+        ]
+      }
+    };
+
+    // 2. Category Filter Logic
+    function filterServices(category, element) {
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      if (element) {
+        element.classList.add('active');
+      }
+
+      const cards = document.querySelectorAll('.service-card');
+      cards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 3. Slide-Over Drawer Controls
+    function openServiceDrawer(serviceKey) {
+      const data = SERVICE_DETAILS[serviceKey] || SERVICE_DETAILS['Keratin & Smooth'];
+      
+      document.getElementById('drawerTitle').textContent = data.title;
+      document.getElementById('drawerDuration').textContent = data.duration;
+      document.getElementById('drawerPrice').textContent = data.price;
+      document.getElementById('drawerFormulation').textContent = data.formulation;
+
+      const benefitsList = document.getElementById('drawerBenefits');
+      benefitsList.innerHTML = '';
+      data.benefits.forEach(b => {
+        const li = document.createElement('li');
+        li.textContent = b;
+        benefitsList.appendChild(li);
+      });
+
+      const message = `Hello Stylopia Hair Studio, I would like to reserve an appointment for: ${data.title} (${data.price}) at your Sitabuldi studio.`;
+      const waUrl = `https://wa.me/919226539619?text=${encodeURIComponent(message)}`;
+      document.getElementById('drawerBookBtn').href = waUrl;
+
+      document.getElementById('drawerOverlay').classList.add('active');
+      document.getElementById('serviceDrawer').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeServiceDrawer() {
+      document.getElementById('drawerOverlay').classList.remove('active');
+      document.getElementById('serviceDrawer').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // 4. FAQ Accordion Toggle
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isActive = item.classList.contains('active');
+      
+      // Close other items
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // Escape Key closes drawer
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeServiceDrawer();
+      }
+    });
+  </script>
+</body>
+</html>

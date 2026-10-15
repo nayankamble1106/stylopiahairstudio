@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50">
+  <rect width="240" height="50" fill="transparent" />
+  <text x="5" y="32" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="700" letter-spacing="4" fill="#FFFFFF">STYLOPIA</text>
+  <circle cx="165" cy="27" r="3" fill="#C8102E" />
+  <text x="175" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="600" letter-spacing="2" fill="#C8102E">HAIR</text>
+  <text x="175" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="600" letter-spacing="2" fill="#A0A0A0">STUDIO</text>
+</svg>
